@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Watch • AnimeVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg" style="border-radius:50%;">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/watch.css" />
+</head>
+<body class="watch-body">
+
+<header class="nav">
+  <div class="brand"><a href="index.html" style="text-decoration:none; color:#ffffff;">AnimeVerse</a></div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="#">Episodes</a>
+    <a href="#">Quality</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- VIDEO PLAYER -->
+<section class="player-wrapper">
+  <div class="player">
+
+    <video id="video" src="assets/video/sample.mp4"></video>
+
+    <!-- Overlay Controls -->
+    <div class="controls">
+
+      <button id="playPause">▶</button>
+
+      <input type="range" id="progress" value="0">
+
+      <span id="time">0:00</span>
+
+      <button id="fullscreen">⛶</button>
+
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/watch.js"></script>
+</body>
+</html>
