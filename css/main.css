@@ -11,6 +11,20 @@ body {
   overflow-x: hidden;
 }
 
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
 /* NAVBAR */
 .nav {
   position: fixed;
@@ -131,4 +145,5 @@ body {
 .anime-card:hover {
   box-shadow: 0 30px 70px rgba(255, 51, 102, 0.35);
 }
+
 
