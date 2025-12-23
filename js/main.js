@@ -20,3 +20,14 @@ cards.forEach(card => {
     card.style.transform = "rotateY(0deg) rotateX(0deg) scale(1)";
   });
 });
+
+/* HAMBURGER MENU */
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+if (hamburger) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
+
