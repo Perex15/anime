@@ -23,43 +23,12 @@ cards.forEach(card => {
 
 /* HAMBURGER MENU */
 const hamMenu = document.querySelector(".ham-menu");
-const topMenu = document.querySelector(".top-menu");
-const menuLinks = document.querySelectorAll(".menu-link");
 
-/* Page transition overlay */
-const transition = document.createElement("div");
-transition.classList.add("page-transition");
-document.body.appendChild(transition);
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
-/* Toggle menu */
-function toggleMenu() {
+hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
-  topMenu.classList.toggle("active");
-  document.body.classList.toggle("menu-open");
-}
-
-hamMenu.addEventListener("click", toggleMenu);
-
-/* Auto-close on link click + page transition */
-menuLinks.forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    const target = link.getAttribute("href");
-
-    transition.classList.add("active");
-    toggleMenu();
-
-    setTimeout(() => {
-      window.location.href = target;
-    }, 400);
-  });
-});
-
-/* ESC key support */
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape" && topMenu.classList.contains("active")) {
-    toggleMenu();
-  }
+  offScreenMenu.classList.toggle("active");
 });
 
 
