@@ -22,6 +22,10 @@
   );
 }
 
+.ham-menu{
+  top: 0px;
+}
+
 /* CARD */
 .auth-card {
   position: relative;
