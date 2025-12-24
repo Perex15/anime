@@ -6,10 +6,14 @@
 .genres-hero {
   position: relative;
   height: 60vh;
-  background: url("../assets/bg/genres-hero.jpg") center/cover no-repeat;
+  background: url("../assets/bg/hero.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ham-menu{
+  top: 0px;
 }
 
 .genres-overlay {
